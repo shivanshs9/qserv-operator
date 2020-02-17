@@ -3,61 +3,62 @@ module github.com/lsst/qserv-operator
 require (
 	contrib.go.opencensus.io/exporter/ocagent v0.4.9 // indirect
 	github.com/Azure/go-autorest v11.5.2+incompatible // indirect
-	github.com/appscode/go v0.0.0-20191119085241-0887d8ec2ecc
 	github.com/appscode/jsonpatch v0.0.0-20190108182946-7c0e3b262f30 // indirect
-	github.com/coreos/prometheus-operator v0.26.0 // indirect
-	github.com/dgrijalva/jwt-go v3.2.0+incompatible // indirect
-	github.com/emicklei/go-restful v2.8.1+incompatible // indirect
 	github.com/go-logr/logr v0.1.0
-	github.com/go-logr/zapr v0.1.0 // indirect
-	github.com/go-openapi/spec v0.18.0
+	github.com/go-openapi/spec v0.19.3
 	github.com/go-redis/redis v6.15.2+incompatible // indirect
 	github.com/go-test/deep v1.0.1
-	github.com/golang/groupcache v0.0.0-20180924190550-6f2cf27854a4 // indirect
-	github.com/google/btree v0.0.0-20180813153112-4030bb1f1f0c // indirect
-	github.com/googleapis/gnostic v0.2.0 // indirect
-	github.com/gophercloud/gophercloud v0.0.0-20190318015731-ff9851476e98 // indirect
+	github.com/gobuffalo/envy v1.9.0 // indirect
 	github.com/gregjones/httpcache v0.0.0-20180305231024-9cad4c3443a7 // indirect
 	github.com/grpc-ecosystem/grpc-gateway v1.8.5 // indirect
 	github.com/iancoleman/strcase v0.0.0-20190422225806-e506e3ef7365
-	github.com/imdario/mergo v0.3.6 // indirect
 	github.com/kube-incubator/redis-operator v0.0.0-20190617093024-4c74f0c74f77
-	github.com/lithammer/dedent v1.1.0 // indirect
 	github.com/operator-framework/operator-sdk v0.8.2-0.20190522220659-031d71ef8154
-	github.com/pborman/uuid v0.0.0-20180906182336-adf5a7427709 // indirect
-	github.com/peterbourgon/diskv v2.0.1+incompatible // indirect
-	github.com/spf13/pflag v1.0.3
-	github.com/stretchr/testify v1.3.0
-	go.opencensus.io v0.19.2 // indirect
-	go.uber.org/atomic v1.3.2 // indirect
-	go.uber.org/multierr v1.1.0 // indirect
-	go.uber.org/zap v1.9.1 // indirect
-	golang.org/x/time v0.0.0-20180412165947-fbb02b2291d2 // indirect
-	k8s.io/api v0.0.0-20190222213804-5cb15d344471
-	k8s.io/apimachinery v0.0.0-20190221213512-86fb29eff628
-	k8s.io/client-go v2.0.0-alpha.0.0.20181126152608-d082d5923d3c+incompatible
-	k8s.io/code-generator v0.0.0-20180823001027-3dcf91f64f63
-	k8s.io/gengo v0.0.0-20190128074634-0689ccc1d7d6
-	k8s.io/kube-openapi v0.0.0-20180711000925-0cf8f7e6ed1d
-	sigs.k8s.io/controller-runtime v0.1.10
-	sigs.k8s.io/controller-tools v0.1.10
-	sigs.k8s.io/testing_frameworks v0.1.0 // indirect
+	github.com/spf13/pflag v1.0.5
+	github.com/stretchr/testify v1.4.0
+	k8s.io/api v0.17.2
+	k8s.io/apimachinery v0.17.2
+	k8s.io/client-go v12.0.0+incompatible
+	k8s.io/code-generator v0.0.0
+	k8s.io/gengo v0.0.0-20190822140433-26a664648505
+	k8s.io/kube-openapi v0.0.0-20191107075043-30be4d16710a
+	kubedb.dev/apimachinery v0.13.0-rc.4
+	sigs.k8s.io/controller-runtime v0.5.0
+	sigs.k8s.io/controller-tools v0.2.2
 )
 
-// Pinned to kubernetes-1.13.1
+// Pinned to kubernetes-1.16.3
 replace (
-	k8s.io/api => k8s.io/api v0.0.0-20181213150558-05914d821849
-	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.0.0-20181213153335-0fe22c71c476
-	k8s.io/apimachinery => k8s.io/apimachinery v0.0.0-20181127025237-2b1284ed4c93
-	k8s.io/client-go => k8s.io/client-go v0.0.0-20181213151034-8d9ed539ba31
+	k8s.io/api => k8s.io/api v0.0.0-20191114100352-16d7abae0d2a
+	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.0.0-20191114105449-027877536833
+	k8s.io/apimachinery => k8s.io/apimachinery v0.16.5-beta.1
+	k8s.io/apiserver => k8s.io/apiserver v0.0.0-20191114103151-9ca1dc586682
+	k8s.io/cli-runtime => k8s.io/cli-runtime v0.0.0-20191114110141-0a35778df828
+	// k8s.io/client-go => k8s.io/client-go kubernetes-1.16.3
+	k8s.io/client-go => k8s.io/client-go v0.0.0-20191114101535-6c5935290e33
+	k8s.io/cloud-provider => k8s.io/cloud-provider v0.0.0-20191114112024-4bbba8331835
+	k8s.io/cluster-bootstrap => k8s.io/cluster-bootstrap v0.0.0-20191114111741-81bb9acf592d
+	k8s.io/component-base => k8s.io/component-base v0.0.0-20191114102325-35a9586014f7
+	k8s.io/cri-api => k8s.io/cri-api v0.16.5-beta.1
+	k8s.io/csi-translation-lib => k8s.io/csi-translation-lib v0.0.0-20191114112310-0da609c4ca2d
+	k8s.io/kube-aggregator => k8s.io/kube-aggregator v0.0.0-20191114103820-f023614fb9ea
+	k8s.io/kube-controller-manager => k8s.io/kube-controller-manager v0.0.0-20191114111510-6d1ed697a64b
+	k8s.io/kube-proxy => k8s.io/kube-proxy v0.0.0-20191114110717-50a77e50d7d9
+	k8s.io/kube-scheduler => k8s.io/kube-scheduler v0.0.0-20191114111229-2e90afcb56c7
+	k8s.io/kubectl => k8s.io/kubectl v0.0.0-20191114113550-6123e1c827f7
+	k8s.io/kubelet => k8s.io/kubelet v0.0.0-20191114110954-d67a8e7e2200
+	k8s.io/legacy-cloud-providers => k8s.io/legacy-cloud-providers v0.0.0-20191114112655-db9be3e678bb
+	k8s.io/metrics => k8s.io/metrics v0.0.0-20191114105837-a4a2842dc51b
+	k8s.io/node-api => k8s.io/node-api v0.0.0-20191114112948-fde05759caf8
+	k8s.io/sample-apiserver => k8s.io/sample-apiserver v0.0.0-20191114104439-68caf20693ac
+	k8s.io/sample-cli-plugin => k8s.io/sample-cli-plugin v0.0.0-20191114110435-31b16e91580f
+	k8s.io/sample-controller => k8s.io/sample-controller v0.0.0-20191114104921-b2770fad52e3
 )
 
 replace (
-	github.com/coreos/prometheus-operator => github.com/coreos/prometheus-operator v0.29.0
 	github.com/operator-framework/operator-sdk => github.com/operator-framework/operator-sdk v0.8.1
 	k8s.io/code-generator => k8s.io/code-generator v0.0.0-20181117043124-c2090bec4d9b
 	k8s.io/kube-openapi => k8s.io/kube-openapi v0.0.0-20180711000925-0cf8f7e6ed1d
-	sigs.k8s.io/controller-runtime => sigs.k8s.io/controller-runtime v0.1.10
 	sigs.k8s.io/controller-tools => sigs.k8s.io/controller-tools v0.1.11-0.20190411181648-9d55346c2bde
 )
 

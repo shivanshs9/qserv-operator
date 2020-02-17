@@ -4,6 +4,7 @@ package v1alpha1
 import (
 	v1 "k8s.io/api/core/v1"
 	metav1 "k8s.io/apimachinery/pkg/apis/meta/v1"
+	kubedbv1 "kubedb.dev/apimachinery/apis/kubedb/v1alpha1"
 )
 
 // EDIT THIS FILE!  THIS IS SCAFFOLDING FOR YOU TO OWN!
@@ -30,6 +31,8 @@ type QservSpec struct {
 	// +kubebuilder:validation:Optional
 	Tolerations []v1.Toleration `json:"tolerations,omitempty"`
 
+	RedisSpec kubedbv1.RedisSpec `json:"redisspec,omitempty"`
+
 	// Worker defines the settings for worker cluster
 	Worker WorkerSettings `json:"worker,omitempty"`
 
@@ -47,6 +50,12 @@ type CzarSettings struct {
 // WorkerSettings defines the specification of the worker cluster
 type WorkerSettings struct {
 	Image    string `json:"image,omitempty"`
+	Replicas int32  `json:"replicas,omitempty"`
+}
+
+// RedisSettings defines the specification of the Redis database for secondary index
+type RedisSettings struct {
+	DbImage  string `json:"dbimage,omitempty"`
 	Replicas int32  `json:"replicas,omitempty"`
 }
 
