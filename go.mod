@@ -5,26 +5,21 @@ require (
 	github.com/Azure/go-autorest v11.5.2+incompatible // indirect
 	github.com/appscode/jsonpatch v0.0.0-20190108182946-7c0e3b262f30 // indirect
 	github.com/go-logr/logr v0.1.0
-	github.com/go-openapi/spec v0.19.3
+	github.com/go-openapi/spec v0.19.4
 	github.com/go-redis/redis v6.15.2+incompatible // indirect
 	github.com/go-test/deep v1.0.1
 	github.com/gobuffalo/envy v1.9.0 // indirect
-	github.com/gregjones/httpcache v0.0.0-20180305231024-9cad4c3443a7 // indirect
-	github.com/grpc-ecosystem/grpc-gateway v1.8.5 // indirect
 	github.com/iancoleman/strcase v0.0.0-20190422225806-e506e3ef7365
 	github.com/kube-incubator/redis-operator v0.0.0-20190617093024-4c74f0c74f77
-	github.com/operator-framework/operator-sdk v0.8.2-0.20190522220659-031d71ef8154
+	github.com/operator-framework/operator-sdk v0.15.2
 	github.com/spf13/pflag v1.0.5
 	github.com/stretchr/testify v1.4.0
-	k8s.io/api v0.17.2
-	k8s.io/apimachinery v0.17.2
+	k8s.io/api v0.17.3
+	k8s.io/apimachinery v0.17.3
 	k8s.io/client-go v12.0.0+incompatible
-	k8s.io/code-generator v0.0.0
-	k8s.io/gengo v0.0.0-20190822140433-26a664648505
 	k8s.io/kube-openapi v0.0.0-20191107075043-30be4d16710a
 	kubedb.dev/apimachinery v0.13.0-rc.4
 	sigs.k8s.io/controller-runtime v0.5.0
-	sigs.k8s.io/controller-tools v0.2.2
 )
 
 // Pinned to kubernetes-1.16.3
@@ -38,6 +33,7 @@ replace (
 	k8s.io/client-go => k8s.io/client-go v0.0.0-20191114101535-6c5935290e33
 	k8s.io/cloud-provider => k8s.io/cloud-provider v0.0.0-20191114112024-4bbba8331835
 	k8s.io/cluster-bootstrap => k8s.io/cluster-bootstrap v0.0.0-20191114111741-81bb9acf592d
+	k8s.io/code-generator => k8s.io/code-generator v0.16.5-beta.1
 	k8s.io/component-base => k8s.io/component-base v0.0.0-20191114102325-35a9586014f7
 	k8s.io/cri-api => k8s.io/cri-api v0.16.5-beta.1
 	k8s.io/csi-translation-lib => k8s.io/csi-translation-lib v0.0.0-20191114112310-0da609c4ca2d
@@ -55,11 +51,6 @@ replace (
 	k8s.io/sample-controller => k8s.io/sample-controller v0.0.0-20191114104921-b2770fad52e3
 )
 
-replace (
-	github.com/operator-framework/operator-sdk => github.com/operator-framework/operator-sdk v0.8.1
-	k8s.io/code-generator => k8s.io/code-generator v0.0.0-20181117043124-c2090bec4d9b
-	k8s.io/kube-openapi => k8s.io/kube-openapi v0.0.0-20180711000925-0cf8f7e6ed1d
-	sigs.k8s.io/controller-tools => sigs.k8s.io/controller-tools v0.1.11-0.20190411181648-9d55346c2bde
-)
+replace github.com/docker/docker => github.com/docker/docker v1.4.2-0.20191113042239-ea84732a7725
 
 go 1.13
