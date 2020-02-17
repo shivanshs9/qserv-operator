@@ -12,6 +12,7 @@ import (
 
 	"github.com/lsst/qserv-operator/pkg/apis"
 	"github.com/lsst/qserv-operator/pkg/controller"
+	v1 "k8s.io/api/core/v1"
 
 	"github.com/operator-framework/operator-sdk/pkg/k8sutil"
 	"github.com/operator-framework/operator-sdk/pkg/leader"
@@ -28,8 +29,14 @@ import (
 
 // Change below variables to serve metrics on different host or port.
 var (
-	metricsHost       = "0.0.0.0"
-	metricsPort int32 = 8383
+	metricsHost = "0.0.0.0"
+	metricsPort = []v1.ServicePort{
+		{
+			Name:     "metrics",
+			Port:     8383,
+			Protocol: "TCP",
+		},
+	}
 )
 var log = logf.Log.WithName("cmd")
 
@@ -110,7 +117,7 @@ func main() {
 	}
 
 	// Create Service object to expose the metrics port.
-	_, err = metrics.ExposeMetricsPort(ctx, metricsPort)
+	_, err = metrics.CreateMetricsService(ctx, nil, metricsPort)
 	if err != nil {
 		log.Info(err.Error())
 	}

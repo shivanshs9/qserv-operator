@@ -98,7 +98,6 @@ func (in *QservSpec) DeepCopyInto(out *QservSpec) {
 			(*in)[i].DeepCopyInto(&(*out)[i])
 		}
 	}
-	in.RedisSpec.DeepCopyInto(&out.RedisSpec)
 	out.Worker = in.Worker
 	out.Xrootd = in.Xrootd
 	return
