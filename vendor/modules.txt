@@ -32,11 +32,11 @@ github.com/go-logr/zapr
 github.com/go-openapi/jsonpointer
 # github.com/go-openapi/jsonreference v0.19.3
 github.com/go-openapi/jsonreference
-# github.com/go-openapi/spec v0.19.4
+# github.com/go-openapi/spec v0.19.6
 github.com/go-openapi/spec
 # github.com/go-openapi/swag v0.19.5
 github.com/go-openapi/swag
-# github.com/go-redis/redis v6.15.2+incompatible
+# github.com/go-redis/redis v6.15.7+incompatible
 github.com/go-redis/redis
 github.com/go-redis/redis/internal
 github.com/go-redis/redis/internal/consistenthash
@@ -44,7 +44,7 @@ github.com/go-redis/redis/internal/hashtag
 github.com/go-redis/redis/internal/pool
 github.com/go-redis/redis/internal/proto
 github.com/go-redis/redis/internal/util
-# github.com/go-test/deep v1.0.1
+# github.com/go-test/deep v1.0.5
 github.com/go-test/deep
 # github.com/gogo/protobuf v1.3.1
 github.com/gogo/protobuf/proto
@@ -76,13 +76,13 @@ github.com/googleapis/gnostic/extensions
 # github.com/hashicorp/golang-lru v0.5.3
 github.com/hashicorp/golang-lru
 github.com/hashicorp/golang-lru/simplelru
-# github.com/iancoleman/strcase v0.0.0-20190422225806-e506e3ef7365
+# github.com/iancoleman/strcase v0.0.0-20191112232945-16388991a334
 github.com/iancoleman/strcase
 # github.com/imdario/mergo v0.3.8
 github.com/imdario/mergo
 # github.com/json-iterator/go v1.1.8
 github.com/json-iterator/go
-# github.com/kube-incubator/redis-operator v0.0.0-20190617093024-4c74f0c74f77
+# github.com/kube-incubator/redis-operator v0.0.0-20190808021507-bdcd3c716f5c
 github.com/kube-incubator/redis-operator/pkg/apis/redis/v1alpha1
 github.com/kube-incubator/redis-operator/pkg/constants
 github.com/kube-incubator/redis-operator/pkg/scheme/redis
@@ -191,7 +191,7 @@ gopkg.in/fsnotify.v1
 gopkg.in/inf.v0
 # gopkg.in/yaml.v2 v2.2.4
 gopkg.in/yaml.v2
-# k8s.io/api v0.17.3 => k8s.io/api v0.0.0-20191114100352-16d7abae0d2a
+# k8s.io/api v0.17.2 => k8s.io/api v0.0.0-20191114100352-16d7abae0d2a
 k8s.io/api/admission/v1beta1
 k8s.io/api/admissionregistration/v1
 k8s.io/api/admissionregistration/v1beta1
@@ -234,7 +234,7 @@ k8s.io/api/storage/v1beta1
 # k8s.io/apiextensions-apiserver v0.17.2 => k8s.io/apiextensions-apiserver v0.0.0-20191114105449-027877536833
 k8s.io/apiextensions-apiserver/pkg/apis/apiextensions
 k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1
-# k8s.io/apimachinery v0.17.3 => k8s.io/apimachinery v0.16.5-beta.1
+# k8s.io/apimachinery v0.17.2 => k8s.io/apimachinery v0.16.5-beta.1
 k8s.io/apimachinery/pkg/api/equality
 k8s.io/apimachinery/pkg/api/errors
 k8s.io/apimachinery/pkg/api/meta
@@ -353,7 +353,7 @@ k8s.io/client-go/util/retry
 k8s.io/client-go/util/workqueue
 # k8s.io/klog v1.0.0
 k8s.io/klog
-# k8s.io/kube-openapi v0.0.0-20191107075043-30be4d16710a
+# k8s.io/kube-openapi v0.0.0-20200204173128-addea2498afe
 k8s.io/kube-openapi/pkg/common
 k8s.io/kube-openapi/pkg/util/proto
 # k8s.io/utils v0.0.0-20191114184206-e782cd3c129f

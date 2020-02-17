@@ -1,28 +1,5 @@
 module github.com/lsst/qserv-operator
 
-require (
-	contrib.go.opencensus.io/exporter/ocagent v0.4.9 // indirect
-	github.com/Azure/go-autorest v11.5.2+incompatible // indirect
-	github.com/appscode/jsonpatch v0.0.0-20190108182946-7c0e3b262f30 // indirect
-	github.com/go-logr/logr v0.1.0
-	github.com/go-openapi/spec v0.19.4
-	github.com/go-redis/redis v6.15.2+incompatible // indirect
-	github.com/go-test/deep v1.0.1
-	github.com/gobuffalo/envy v1.9.0 // indirect
-	github.com/iancoleman/strcase v0.0.0-20190422225806-e506e3ef7365
-	github.com/kube-incubator/redis-operator v0.0.0-20190617093024-4c74f0c74f77
-	github.com/operator-framework/operator-sdk v0.15.2
-	github.com/spf13/pflag v1.0.5
-	github.com/stretchr/testify v1.4.0
-	k8s.io/api v0.17.3
-	k8s.io/apimachinery v0.17.3
-	k8s.io/client-go v12.0.0+incompatible
-	k8s.io/kube-openapi v0.0.0-20191107075043-30be4d16710a
-	kubedb.dev/apimachinery v0.13.0-rc.4
-	sigs.k8s.io/controller-runtime v0.5.0
-)
-
-// Pinned to kubernetes-1.16.3
 replace (
 	k8s.io/api => k8s.io/api v0.0.0-20191114100352-16d7abae0d2a
 	k8s.io/apiextensions-apiserver => k8s.io/apiextensions-apiserver v0.0.0-20191114105449-027877536833
@@ -54,3 +31,21 @@ replace (
 replace github.com/docker/docker => github.com/docker/docker v1.4.2-0.20191113042239-ea84732a7725
 
 go 1.13
+
+require (
+	github.com/go-logr/logr v0.1.0
+	github.com/go-openapi/spec v0.19.6
+	github.com/go-redis/redis v6.15.7+incompatible // indirect
+	github.com/go-test/deep v1.0.5
+	github.com/iancoleman/strcase v0.0.0-20191112232945-16388991a334
+	github.com/kube-incubator/redis-operator v0.0.0-20190808021507-bdcd3c716f5c
+	github.com/operator-framework/operator-sdk v0.15.2
+	github.com/spf13/pflag v1.0.5
+	github.com/stretchr/testify v1.4.0
+	k8s.io/api v0.17.2
+	k8s.io/apimachinery v0.17.2
+	k8s.io/client-go v12.0.0+incompatible
+	k8s.io/kube-openapi v0.0.0-20200204173128-addea2498afe
+	kubedb.dev/apimachinery v0.13.0-rc.4
+	sigs.k8s.io/controller-runtime v0.5.0
+)
