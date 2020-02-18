@@ -54,10 +54,12 @@ github.com/golang/glog
 # github.com/golang/groupcache v0.0.0-20191027212112-611e8accdfc9
 github.com/golang/groupcache/lru
 # github.com/golang/protobuf v1.3.2
+github.com/golang/protobuf/jsonpb
 github.com/golang/protobuf/proto
 github.com/golang/protobuf/ptypes
 github.com/golang/protobuf/ptypes/any
 github.com/golang/protobuf/ptypes/duration
+github.com/golang/protobuf/ptypes/struct
 github.com/golang/protobuf/ptypes/timestamp
 # github.com/google/go-cmp v0.3.1
 github.com/google/go-cmp/cmp
@@ -234,7 +236,7 @@ k8s.io/api/storage/v1beta1
 # k8s.io/apiextensions-apiserver v0.17.2 => k8s.io/apiextensions-apiserver v0.0.0-20191114105449-027877536833
 k8s.io/apiextensions-apiserver/pkg/apis/apiextensions
 k8s.io/apiextensions-apiserver/pkg/apis/apiextensions/v1beta1
-# k8s.io/apimachinery v0.17.2 => k8s.io/apimachinery v0.16.5-beta.1
+# k8s.io/apimachinery v0.17.2 => github.com/kmodules/apimachinery v0.0.0-20191119091232-0553326db082
 k8s.io/apimachinery/pkg/api/equality
 k8s.io/apimachinery/pkg/api/errors
 k8s.io/apimachinery/pkg/api/meta
