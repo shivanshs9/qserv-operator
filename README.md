@@ -28,7 +28,6 @@ cd kind-travis-ci
 cd "$WORKDIR"
 git clone  https://github.com/lsst/qserv-operator
 cd qserv-operator
-cp env.example.sh env.sh
 ./deploy.sh
 ./wait-operator-ready.sh
 kubectl apply -k base
@@ -74,8 +73,6 @@ Command below deploy `qserv-operator`
 # Deploy qserv-operator
 git clone https://github.com/lsst/qserv-operator.git
 cd qserv-operator
-# Edit env.sh to set the namespace where qserv-operator will be deployed (TODO: replace with cmd-line option)
-cp env.example.sh env.sh
 ./deploy.sh
 ```
 
