@@ -1,8 +1,6 @@
 package qserv
 
 import (
-	"fmt"
-
 	appsv1 "k8s.io/api/apps/v1"
 	v1 "k8s.io/api/core/v1"
 	"k8s.io/apimachinery/pkg/api/resource"
@@ -11,7 +9,6 @@ import (
 	qservv1alpha1 "github.com/lsst/qserv-operator/pkg/apis/qserv/v1alpha1"
 	"github.com/lsst/qserv-operator/pkg/constants"
 	"github.com/lsst/qserv-operator/pkg/util"
-	kubedbv1 "kubedb.dev/apimachinery/apis/kubedb/v1alpha1"
 	logf "sigs.k8s.io/controller-runtime/pkg/runtime/log"
 )
 
@@ -21,8 +18,6 @@ var log = logf.Log.WithName("qserv")
 func GenerateCzarStatefulSet(cr *qservv1alpha1.Qserv, labels map[string]string) *appsv1.StatefulSet {
 	name := cr.Name + "-" + string(constants.CzarName)
 	namespace := cr.Namespace
-	var redisSpec kubedbv1.RedisSpec
-	fmt.Printf("%v", redisSpec)
 	labels = util.MergeLabels(labels, util.GetLabels(constants.CzarName, cr.Name))
 
 	var replicas int32 = 1
