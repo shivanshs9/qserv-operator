@@ -4,7 +4,7 @@ A qserv operator for Kubernetes based on [operator-framework](https://github.com
 
 *operator-sdk version: v0.13.0*
 
-[![Build Status](https://travis-ci.org/lsst/qserv-operator.svg?branch=master)](https://travis-ci.org/lsst/qserv-operator)
+[![Build Status](https://travis-ci.com/lsst/qserv-operator.svg?branch=master)](https://travis-ci.com/lsst/qserv-operator)
 
 ## Deploy qserv
 
